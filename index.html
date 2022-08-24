@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="stylesheet" href="/reset.css"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Inter&family=Maven+Pro:wght@700&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <header class="header">
+            <a href="" class="title">Encriptador</a>
+        </header>
+        <main class="contenido-texto">
+            <textarea name="" id="input-texto" cols="30" rows="10" class="input-texto" placeholder="Ingrese el texto aquí"></textarea>
+            
+            <p class="info"><i class="uil uil-info-circle"></i> Solo letras minusculas y sin acentos</p>
+        </main>
+        <div class="texto-resultado">
+            <img src="img/searching.gif" width="150px" alt="" id="img">
+            <h3 class="mensaje">Ningun mensaje fue encontrado</h3>
+            <p class="text-out" id="text-out">Ingresa el texto que desees <br>encriptar o desencriptar.</p>
+            <button class="btn" id="copy" onclick="copy()" style="visibility: hidden;">Copiar</button>
+
+        </div>
+        <div class="encriptar">
+            <button class="btn" id="encriptar" onclick="encriptar()">Encriptar</button>
+        </div>
+        <div class="desencriptar">
+            <button class="btn" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+    </div>
+
+    <!-- Boton redes -->
+
+    <div class="link-redes">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/antonella-mazzarelli/" target=”_blank” class="uil uil-linkedin-alt"></a>
+            <a href="https://github.com/antomazzarelli" target=”_blank” class="uil uil-github"></a>
+            <a href="mailto:mazzarelliantonella97@gmail.com" class="uil uil-envelopes"></a>
+
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="uil uil-plus"></label>
+        </div>
+    </div>
+</body>
+<script src="/principal.js"></script>
+
+</html>
